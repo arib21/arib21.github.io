@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>arib21@jazzmine</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="termynal.css">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+		<style>
+			body {
+				padding: 0; margin: 0;
+				background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+				width: 100%;
+				min-height: 100vh;
+				display: -webkit-box; display: -ms-flexbox; display: flex;
+				-webkit-box-align: center; -ms-flex-align: center; align-items: center;
+				-webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+				-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+			}
+
+			#y-n-link {
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="termynal" data-termynal>
+			<span data-ty="input">python3 intro.py</span>
+			<span data-ty>Hallo World!
+				I'm Arib Muhtasim, a kinda dum kid trying to look smarter than he actually is... 
+			</span>
+			<span data-ty="input">ls</span>
+			<span data-ty>hobbies/ &nbsp; oofman6000/</span>
+			<span data-ty="input">cd hobbies/ && ls</span>
+			<span data-ty>code/ &nbsp; games/ &nbsp; kill_friends.py</span>
+			<span data-ty="input">cd code/ && ls</span>
+			<span data-ty><span style="color: #4a73c0;">github</span> &nbsp; python/ &nbsp; cc++/ &nbsp; web/</span>
+			<span data-ty="input">./github</span>
+			<span data-ty>[<span style="color: rgb(74, 117, 74);">?</span>] Do you want to take a look at my GitHub? [<span id="y-n-link" onclick="window.open('https://github.com/arib21');">y</span>/<span id="y-n-link" onclick="window.open('https://youtu.be/dQw4w9WgXcQ');">n</span>]</span>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@duckdoc/termynal@1.0.0/termynal.js" data-termynal-container="#termynal"></script>
+	</body>
+</html>
